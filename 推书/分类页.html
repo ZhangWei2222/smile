@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>分类页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/分类页.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="./js/分类页.js"></script>
+    <script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+    <script type="text/javascript" src="./js/book-mock.js"></script>
+    <script type="text/javascript" src="./js/填充.js"></script>
+    <script type="text/javascript" src="./js/分页底部.js"></script>
+</head>
+<body>
+
+	<div id="all">
+
+		<!-- 顶栏 -->
+		<header>
+			<img src="./img/header.png" class="header">
+			<img src="./img/smalllogo.png" class="smalllogo">
+
+			<div class="searchBox">
+				<input id="search" class="searchInput"
+				name="search_word" type="text"
+				value="" placeholder="请搜索"
+				required="required"/>
+
+				<button class="searchBtn"></button>
+			</div>
+		</header>
+
+		<!-- 轮播图 -->
+		<div id="carousel">
+
+    		<!---图片队列-->
+    		<div id="list" style="left: -1280px;">
+
+    			<div class="banner_3">
+    				<div class="shadow">
+    					<div class="recommend">
+    						<span class="word_2">今日推荐</span>
+    						<span class="word_3">震惊！维生数前端居然是这样考核</span>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="banner_1">
+    				<div class="book">
+    					<img src="./img/book.png" class="book_img">
+    				</div>
+    				<p class="word_1">推书，推你所想</p>
+    			</div>
+
+    			<div class="banner_2">
+    				<img src="./img/smallerlogo.png"class="smallerlogo">
+    			</div>
+
+    			<div class="banner_3">
+    				<div class="shadow">
+    					<div class="recommend">
+    						<span class="word_2">今日推荐</span>
+    						<span class="word_3">震惊！维生数前端居然是这样考核</span>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="banner_1">
+    				<div class="book">
+    					<img src="./img/book.png" class="book_img">
+    				</div>
+    				<p class="word_1">推书，推你所想</p>
+    			</div>
+
+    		</div>
+
+    		<!--小圆点-->
+    		<div id="buttons">
+        		<span index="1" class="on"></span>
+        		<span index="2"></span>
+       			<span index="3"></span>
+    		</div>
+
+		</div>
+
+        <!-- 分类导航 -->
+		<nav>
+			<ul id="tit">
+
+			</ul>
+		</nav>
+
+        <!-- 书架总内容 -->
+        <div id="sections">
+
+        <!-- 分类1 -->
+        <section style="display: block;">
+            <div id="bookTemplate">
+            </div>
+            <div class="details"></div>
+            <div id="footer">
+            </div>
+        </section>
+
+        <!-- 分类2 -->
+        <section style="display: none;">
+            <div id="bookTemplate">
+            </div>
+            <div id="footer">
+            </div>
+        </section>
+
+        <!-- 分类3 -->
+        <section style="display: none;">
+            <div id="bookTemplate">
+            </div>
+            <div id="footer">
+            </div>
+        </section>
+
+        <!-- 分类4 -->
+        <section style="display: none;">
+            <div id="bookTemplate">
+            </div>
+            <div id="footer">
+            </div>
+        </section>
+
+        </div>
+        <div class="cover">
+        <div id="detail">
+            <div class="green"></div>
+            <img src="./img/smallclose.png" id="smallclose">
+            <img src="./img/x.png" class="x1">
+            <img src="./img/y.png" class="y1">
+
+            <img src="./img/x.png" class="x2">
+            <img src="./img/y.png" class="y2">
+        </div>
+
+        </div>
+</body>
+</html>
+

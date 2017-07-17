@@ -1,0 +1,359 @@
+*{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#all{
+	background: url(../img/bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width:auto;
+	display: flex;
+	justify-content: center;
+
+	align-items: center;
+}
+
+/*登录头像&&用户名*/
+#login_box{
+	width: 33px;
+	height: 36px;
+	position: absolute;
+	top:44px;
+	right: 56px;
+}
+
+#NAME{
+	width: 6%;
+	height: 3%;
+	position: absolute;
+	top: 5%;
+	left: 92%;
+	display: none;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: Microsoft YaHei;
+	color: #5e6065;
+}
+
+/*主要内容*/
+#content{
+	width: 30%;
+	height: 41%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	min-width: 400px;
+	min-height: 200px;
+}
+
+/*推书大logo*/
+#logo{
+	flex:0 0 52%;
+	display: flex;
+	justify-content: center;
+}
+
+.logo_img{
+	width: 70%;
+	height:100%;
+}
+
+/*文字*/
+#words{
+	flex:0 0 17%;
+	text-align: center;
+	font-size: 17px;
+	color:#7d766b;
+	font-family: Microsoft YaHei;
+	font-weight: 500;
+}
+
+/*搜索框*/
+.searchBox{
+	display: flex;
+	display: -webkit-flex;
+	border:1px solid rgb(218,218,218);
+	border-radius: 25px;
+	background: #FCFCFC;
+	box-shadow: 1px 2px 12px 3px #dadada;
+}
+
+.searchInput{
+	flex:1;
+	font-size: 20px;
+	font-family: Microsoft YaHei;
+	color: #5e6065;
+	border-radius: 25px;
+	border-style: none;
+	outline:none;
+	text-indent: 32px;
+	letter-spacing:3px;
+	font-weight:500;
+}
+
+.searchBtn{
+	width:30px;
+	border: none;
+	background: url(../img/search.png) no-repeat 0px center;
+	background-size: 80%;
+	outline: none;
+}
+
+.buttons{
+	position: absolute;
+	top: 26%;
+	left: 92%;
+}
+
+/*分类栏*/
+#classification{
+	flex:0 0 18%;
+	display: flex;
+}
+
+ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+li{
+	float: left;
+	background-color: #f0f1f2;
+	border: 1px solid #a6a4a4;
+	font-weight:200;
+	border-radius: 25px;
+	width: 14%;
+	height: 34%;
+	margin: 1%;
+	min-width: 60px;
+	min-height: 20px;
+}
+
+li:hover{
+	background-color:#8c8f8f;
+}
+
+.species{
+	text-decoration: none;
+	font-size: 14px;
+	color: #656666;
+	text-align:center;
+	display: block;
+	font-weight: 200;
+	font-family: Microsoft YaHei;
+}
+
+/*登录框*/
+#logon{
+	border: 2px solid black;
+	background-color:rgba(255,255,255,0.8);
+	display: none;
+	position: absolute;
+	top: 21%;
+	width: 51%;
+	height: 53%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*小推书logo*/
+#small_logo{
+	flex:0 0 40%;
+	display: flex;
+}
+
+.small_logo_img{
+	width: 22%;
+	height: 60%;
+	margin-top: 3%;
+	margin-left: 39%;
+}
+
+/*关闭小按钮*/
+.close
+{
+	width: 3%;
+	height: 15%;
+	margin-top: 2%;
+	margin-left: 34%;
+}
+
+/*输入栏*/
+#username{
+	flex:0 0 20%;
+	display: flex;
+	justify-content: center;
+}
+
+#password{
+	flex:0 0 20%;
+	display: flex;
+	justify-content: center;
+}
+
+.loginInput {
+	font-family: Microsoft YaHei;
+	width: 43%;
+	height: 41%;
+	border-radius: 25px;
+	background: #FCFCFC;
+	box-shadow: 2px 2px 10px 4px #dee2e3;
+	color:#98999c;
+	font-size: 14px;
+	font-weight: 500;
+	outline:none;
+	border-style: none;
+	text-indent: 13%
+}
+
+span{
+	width: 13%;
+	margin-top: 1%;
+	font-size: 17px;
+	font-weight: 500;
+	font-family: Microsoft YaHei;
+}
+
+/*提交*/
+#button{
+	flex:0 0 20%;
+	display: flex;
+	justify-content: center;
+}
+
+.submit{
+	width: 15%;
+	height: 50%;
+	border-radius: 35px;
+	border-style: none;
+	background-color:rgba(255,255,255,0.7);
+	box-shadow: -1px -1px 5px 2px #dee2e3 inset;
+	border: 1px solid #b8babc;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+	color:#727479;
+	outline:none;
+	margin-left: 33%;
+	margin-right: 12%;
+}
+
+.register{
+	font-family: Microsoft YaHei;
+	font-size: 17px;
+	color:#727479;
+	text-decoration: underline;
+	font-weight: 500;
+	height: 30%;
+	width: 22%;
+}
+
+/*加载*/
+#class3
+{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	margin: 10px auto;
+	border:1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:rgba(255,255,255,0.8);
+	display: none;
+}
+
+/*中心圆背景*/
+.content
+{
+	position: absolute;
+	width: 230px;
+	height: 230px;
+	background-image: url(./red2.jpg);
+	background-size: 100% 100%;
+	border-radius: 50%;
+	top: 117px;
+	left:35px;
+	text-align: center;
+	line-height: 230px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*文字*/
+.appointment
+{
+	font-size: 50px;
+	font-weight: 700;
+	font-family:Microsoft YaHei ;
+	color:#878787;
+}
+
+/*左右两半圆*/
+.left,.right
+{
+	width: 150px;
+	height: 300px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.left
+{
+	border-radius: 300px 0 0 300px;
+
+}
+
+.right
+{
+	border-radius: 0 300px 300px 0;
+
+}
+
+.right:after,.left:after
+{
+	content: "";
+	position: absolute;
+	width: 150px;
+	height: 300px;
+	background-color:#b0a2a2;
+	filter: blur(3px);
+	opacity: 0.8;
+}
+
+/*旋转*/
+@keyframes rotateA
+{
+	0%,25%{transform: rotateZ(0deg);}
+	50%,75%{transform: rotateZ(180deg);}
+	100%{transform: rotateZ(360deg);}
+}
+
+@keyframes rotateB
+{
+	25%,50%{transform: rotateZ(180deg);}
+	75%,100%{transform: rotateZ(360deg);}
+}
+
+.left:after
+{
+	animation:rotateA 3s infinite linear;
+	transform-origin: right center;
+}
+
+.right:after
+{
+	-webkit-animation:rotateB 3s infinite linear;
+	transform-origin: left center;
+}

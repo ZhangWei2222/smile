@@ -1,0 +1,102 @@
+<!--
+版本：0.2
+主要修改：修改细节
+缺陷：接口
+时间：17/4/7/16：04
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/主页.css">
+	    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<div id="all">
+
+		<!-- 登录头像&&用户名 -->
+		<div id="login_box"><img src="./img/login-icon.png" onclick="popup()"></div>
+		<div id="NAME">用户名</div>
+
+		<!-- 主要内容 -->
+		<div id="content">
+
+			<!-- 推书大logo -->
+			<div id="logo">
+				<img src="./img/logo.png" class="logo_img">
+			</div>
+
+			<!-- 文字 -->
+			<div id="words">
+				The books that know you
+			</div>
+
+			<!-- 搜索框 -->
+			<div class="searchBox">
+				<input id="search" class="searchInput"
+				name="search_word" type="text"
+				value="" placeholder="搜索"
+				required="required"/>
+
+				<a href="搜索页.html" class="buttons"><button class="searchBtn" onclick="buttonn()"></button></a>
+			</div>
+
+			<!-- 分类栏 -->
+			<div id="classification">
+				<ul>
+					<li><a href="分类页.html" class="species">大类&nbsp;1</a></li>
+					<li><a href="分类页.html" class="species">大类&nbsp;2</a></li>
+					<li><a href="分类页.html" class="species">大类&nbsp;3</a></li>
+					<li><a href="分类页.html" class="species">大类&nbsp;4</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- 登录框 -->
+		<div id="logon">
+
+			<!-- 小推书logo -->
+			<div id="small_logo">
+				<img src="./img/logo.png" class="small_logo_img">
+				<img src="img/close.png" class="close" onclick="close_js()">
+			</div>
+
+			<!-- 输入栏 -->
+			<div id="username">
+				<span>账&nbsp;&nbsp;号：</span>
+				<input type="text" name="name" id="name" class="loginInput" 
+				value="" placeholder="用 户 名" 
+				required="required" autocomplete="off" />
+			</div>
+			<div id="password">
+				<span>密&nbsp;&nbsp;码：</span>
+				<input type="password" name="word" id="word"
+				value="" class="loginInput" 
+				required="required"/>
+			</div>
+
+			<!-- 提交 -->
+			<div id="button">
+			<input type="submit" name="submit"  class="submit"
+			value="登&nbsp;录" onclick="submit_js()">
+
+			<a href="#" class="register">注册</a>
+			</div>
+
+		</div>
+
+		<!-- 加载 -->
+		<div id="class3">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="content"><span class="appointment">Loading</span></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="./js/主页.js"></script>
+</body>
+</html>

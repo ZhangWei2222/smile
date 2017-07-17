@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/搜索页.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+    <script type="text/javascript" src="./js/book-mock.js"></script>
+    <script type="text/javascript" src="./js/搜索页.js"></script>
+</head>
+<body>
+	<div id="all">
+		<!-- 顶栏 -->
+		<header>
+			<img src="./img/header.png" class="header">
+			<img src="./img/smalllogo.png" class="smalllogo">
+
+			<div class="searchBox">
+				<input id="search" class="searchInput"
+				name="search_word" type="text"
+				value="" placeholder="请搜索"
+				required="required"/>
+
+				<button class="searchBtn"></button>
+			</div>
+
+			<div class="classification">
+			<span class="word1">分类</span>
+			</div>
+
+			<div id="classifications">
+				<a href="分类页.html" class="smallclassification" id="0">分类1</a>
+				<a href="分类页.html" class="smallclassification" id="1">分类2</a>
+				<a href="分类页.html" class="smallclassification" id="2">分类3</a>
+				<a href="分类页.html" class="smallclassification" id="3">分类4</a>
+			</div>
+		</header>
+
+		<!-- 搜索的东西 -->
+		<div class="banner">
+		<div class="box">
+			<div class="shadow">
+					<span id="word">搜索的东西</span>
+			</div>
+			</div>
+		</div>
+
+        <!-- 书架总内容 -->
+        <div id="sections">
+
+	        <section style="display: block;">
+	            <div id="bookTemplate">
+	            </div>
+	            <div class="details"></div>
+	            <div id="footer">
+	            </div>
+	        </section>
+	    </div>
+
+	</div>
+</body>
+</html>
