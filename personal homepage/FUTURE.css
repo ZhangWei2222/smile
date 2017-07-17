@@ -1,0 +1,551 @@
+*
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+#parent1  /*布局1*/
+{
+	width:300px;
+	float:left;
+	background-image: url(./lattic1.jpg);
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+.id
+{
+	border-radius: 50%;
+	width:150px;
+	height: 150px;
+	border: 3px solid #D2EFCB;
+	background-image: url(./id.jpg);
+	background-size:150px 200px;
+	position:relative;
+	margin:60px auto;
+}
+
+.id:hover  /*实现头像悬浮效果*/
+{
+
+	border: 3px solid #7DDE70;
+}
+
+ul  /*规定列表位置*/
+{
+	width: 200px;
+	height:300px;
+	list-style-type:none;
+	position:relative;
+	margin:auto;
+}
+
+li
+{
+	width:200px;
+	height:100px;
+}
+
+a  /*设置导航条的样式*/
+{
+	display:block;
+	width: 200px;
+	height:50px;
+	padding: 4px;
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.2);
+	text-decoration:none;
+	text-align: center;
+	line-height:50px;
+	font-size:18px;
+	color:#626060;
+}
+
+a.ME:hover
+{
+	background-color:#F4D1D1;
+	opacity: 0.6;
+}
+
+a.LIKE:hover
+{
+	background-color:#D5F3EF;
+	opacity: 0.6;
+}
+
+a.FUTURE:hover
+{
+	background-color:#F7F5C2;
+	opacity: 0.6;
+}
+
+#parent2  /*布局二*/
+{
+	width:auto;
+	margin-left:310px;
+	background-image: url(./lattic2.jpg);
+	background-repeat: repeat;
+	background-attachment:fixed;
+	position: relative;
+}
+
+#heading
+{
+
+	width: 78%;
+	height:30%;
+	position: absolute;
+	left:10%;
+}
+
+.title
+{
+	color: #F3EBEB;
+    font-family: Oswald;
+  	font-size: 4em;
+  	text-transform: uppercase;
+  	background-color:transparent;
+	transition: 0.5s all ease;
+	margin:1% 15%;
+
+	text-shadow:
+	/*color one*/
+	1px 1px #61b4de,2px 2px #61b4de,3px 3px #61b4de,4px 4px #61b4de,
+	/*color two*/
+	5px 5px #91c467,6px 6px #91c467,7px 7px #91c467,8px 8px #91c467,
+	/*color three*/
+	9px 9px #f3a14b,10px 10px #f3a14b,11px 11px #f3a14b,12px 12px #f3a14b,
+	/*color four*/
+	13px 13px #e84c50,14px 14px #e84c50,15px 15px #e84c50,16px 16px #e84c50,
+	/*color four*/
+	17px 17px #4e5965,18px 18px #4e5965,19px 19px #4e5965,20px 20px #4e5965;
+	cursor: pointer;
+}
+
+.title:hover
+{
+	color: #474646;
+
+	text-shadow:
+	/*color one*/
+	1px 1px #61b4de,
+	/*color two*/
+	2px 2px #91c467,
+	/*color three*/
+	3px 3px #f3a14b,
+	/*color four*/
+	4px 4px #e84c50,
+	/*color five*/
+	5px 5px #4e5965;	
+}
+
+.Zhang
+{
+	position: absolute;
+	top:55%;
+	left:15%;
+}
+
+
+#future /*布局三FUTURE布局*/
+{
+	position: relative;
+	width:38%;
+	height:60%;
+	border:1px solid black;
+	border-radius:8px;
+	top:27%;
+	left: 25%;
+	cursor: pointer;
+}
+
+#future:hover /*设置悬浮效果*/
+{
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.1);
+}
+
+.future_image  /*FUTURE布局插图*/
+{
+	width:85%;
+	height: 60%;
+	border: 1px solid #F7F5C2;
+	background-image: url(./future.jpg);
+	background-size:100% 100%;
+	margin:20px auto;
+
+}
+
+.future_word  /*FUTURE布局文字*/
+{
+	width:85%;
+	height:30%;
+	font-family:FangSong;
+	font-size: 21px;
+	text-indent: 32px;
+	margin:0 auto;
+}
+
+/************************************************************************************
+MEDIA QUERIES（媒体查询，缩放浏览器看看）
+*************************************************************************************/
+
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:700px;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 20px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	.class1
+	{
+		position: absolute;;
+		margin:0 auto;
+		height: 60%;
+	}
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 770px){
+
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:700px;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 20px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+	
+	#future
+	{
+		width: 50%;
+		height: 60%;
+	}
+
+	.future_image
+	{
+		width: 70%;
+		height: 60%
+	}
+
+}
+
+@media screen and (max-width: 768px) and (min-width:650px) {
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:700px;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 20px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	#heading
+	{
+		width: 78%;
+		left: 1%;
+		top: 3%;
+	}
+
+	.Zhang
+	{
+		top: 37%;
+		left: 15%;
+		top: 40%;
+	}
+
+	#future
+	{
+		width: 90%;
+		height: 50%;
+		top: 25%;
+		left: 5%;
+	}
+
+	.future_image
+	{
+		width: 90%;
+		height: 70%;
+		margin: 20px auto;
+	}
+
+	.future_word
+	{
+		width: 85%;
+		height: 30%;
+		font-size: 24px;
+		margin: 20px auto;
+	}
+}
+
+@media screen and (max-width: 650px) and (min-width:560px) {
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:640px;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 9px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	#heading
+	{
+		width: 78%;
+		left: 10%;
+	}
+
+	.Zhang
+	{
+		top: 75%;
+	}
+
+	#future
+	{
+		width: 80%;
+		height: 60%;
+		top:31%;
+		left: 10%;
+	}
+}
+
+@media screen and (max-width: 560px) and (min-width:320px) {
+*
+{
+	width: auto;
+}
+#parent1
+{
+	width:320px;
+	float: none;
+	height: 127px;
+	position: absolute;
+}
+
+/*实现头像效果*/
+.id
+{
+	width:70px;
+	height: 70px;
+	background-size:75px 100px;
+	margin: 4px auto;
+}
+
+.id:hover
+{
+
+	border: 3px solid #7DDE70;
+}
+
+/*设置导航条的样式*/
+	ul
+	{
+		width:320px;
+		height:45px;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 18px;
+		width: 80px;
+		height: 41px;
+	}
+
+a
+{
+	width: 80px;
+	height:30px;
+	line-height:30px;
+}
+
+
+/*布局2*/
+	#parent2
+	{
+		top:132px;
+		left: -320px;
+		width: 320px;
+		height: 72%;
+	}
+
+	#heading
+	{
+		width: 78%;
+		height: 30%;
+	}
+
+	.title
+	{
+		font-size: 2em;
+	}
+
+	.Zhang
+	{
+		top: 87%;
+		font-size: 11px;
+	}
+
+	#future
+	{
+		top: 31%;
+		left: 10%;
+		width: 80%;
+		height: 60%;
+	}
+
+	.future_image
+	{
+		width: 85%;
+		height: 47%;
+	}
+
+	.future_word
+	{
+		font-size: 16px;
+		width: 89%;
+	}
+}

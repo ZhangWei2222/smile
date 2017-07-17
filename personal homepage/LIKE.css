@@ -1,0 +1,662 @@
+*
+{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+
+/*布局1*/
+#parent1
+{
+	width:300px;
+	float:left;
+	background-image: url(./lattic1.jpg);
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+.id
+{
+	border-radius: 50%;
+	width:150px;
+	height: 150px;
+	border: 3px solid #D2EFCB;
+	background-image: url(./id.jpg);
+	background-size:150px 200px;
+	position:relative;
+	margin:60px auto;
+}
+
+/*实现头像悬浮效果*/
+.id:hover
+{
+
+	border: 3px solid #7DDE70;
+}
+
+/*规定列表位置*/
+ul
+{
+	width: 200px;
+	height:300px;
+	list-style-type:none;
+	position:relative;
+	margin:auto;
+}
+
+li
+{
+	width:200px;
+	height:100px;
+}
+
+/*设置导航条的样式*/
+a
+{
+	display:block;
+	width: 200px;
+	height:50px;
+	padding: 4px;
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.2);
+	text-decoration:none;
+	text-align: center;
+	line-height:50px;
+	font-size:18px;
+	color:#626060;
+}
+
+a.ME:hover
+{
+	background-color:#F4D1D1;
+	opacity: 0.6;
+}
+
+a.LIKE:hover
+{
+	background-color:#D5F3EF;
+	opacity: 0.6;
+}
+
+a.FUTURE:hover
+{
+	background-color:#F7F5C2;
+	opacity: 0.6;
+}
+
+/*布局二*/
+#parent2
+{
+	width:auto;
+	margin-left:310px;
+	background-image: url(./lattic2.jpg);
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+/*travel布局*/
+#travel
+{
+	position: relative;
+	width:30%;
+	height:95%;
+	border:1px solid black;
+	float: left;
+	margin:20px 13px;
+	border-radius:8px;
+	min-width: 200px;
+	overflow: scroll;
+}
+
+#travel:hover
+{
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.1);
+}
+
+.travel_image
+{
+	top: 2%;
+	left: 8%;
+	width: 84%;
+	height:35%;
+	border: 1px solid #ECEBEB;
+	background-image: url(./TRAVEL.jpeg);
+	background-size:100% 100%;
+	position:absolute;
+	border-radius: 3px;
+}
+
+/*food*/
+#food
+{
+	position: relative;
+	width:30%;
+	height:95%;
+	border:1px solid black;
+	float: left;
+	margin:20px 13px;
+	border-radius:8px;
+	min-width: 200px;
+	overflow: scroll;
+}
+
+#food:hover
+{
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.1);
+}
+
+.food_image
+{
+	top: 2%;
+	left: 8%;
+	width: 84%;
+	height:35%;
+	border: 1px solid #ECEBEB;
+	background-image: url(./EAT1.jpg);
+	background-size:100% 100%;
+	position:absolute;
+	border-radius: 3px;
+}
+
+/*movie布局*/
+#movie
+{
+	position: relative;
+	width:30%;
+	height:95%;
+	border:1px solid black;
+	float: left;
+	margin:20px 13px;
+	border-radius:8px;
+	min-width: 200px;
+	overflow: scroll;
+}
+
+#movie:hover
+{
+	background-color:#DCDADA;
+	background:rgba(0,0,0,0.1);
+}
+
+.movie_image
+{
+	top: 2%;
+	left: 8%;
+	width: 84%;
+	height:35%;
+	border: 1px solid #ECEBEB;
+	background-image: url(./MOVIE.jpg);
+	background-size:100% 100%;
+	position:absolute;
+	border-radius: 3px;
+}
+
+/*设置布局二中三个主题文字样式*/
+span
+{
+	font-style:Century Gothic;
+	font-size: 28px;
+	height: auto;}
+
+/*三个文字样式*/
+.word1,.word2,.word3
+{
+	position: absolute;
+	top:40%;
+	left:8%;
+	font-family:FangSong;
+	font-size: 20px;
+	height: auto;
+	width: 192px;
+}
+
+/*三个模板中第一段文字*/
+.q_1,.q_3
+{
+	position: absolute;
+	top:60%;
+	font-family:FangSong;
+	font-size: 20px;
+	text-indent: 32px;
+	height: auto;
+}
+
+/*三个模板中第二段文字*/
+.q_2,.q_4
+{
+	position: absolute;
+	top:78%;
+	font-family:FangSong;
+	font-size: 20px;
+	text-indent: 32px;
+	height: auto;
+}
+
+/************************************************************************************
+MEDIA QUERIES（媒体查询，缩放浏览器看看）
+*************************************************************************************/
+
+/* from 1024px to 770px */
+@media screen and (max-width: 1024px) and (min-width: 770px){
+
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:700px;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 20px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	#travel
+	{
+		width: 25%;
+		height: 95%;
+		margin: 1% 1%;
+		margin-left: 10%;
+	}
+
+	#food
+	{
+		width: 25%;
+		height: 95%;
+		margin: 1% 1%;
+	}
+
+	#movie
+	{
+		width: 25%;
+		height: 95%;
+		margin: 1% 1%;
+	}
+
+	.word1,.word2,.word3
+	{
+		font-size: 19px;
+	}
+
+	.q_1,.q_2,.q_3,.q_4
+	{
+		font-size: 19px;
+	}
+
+}
+
+/* from 768px to 650px */
+@media screen and (max-width: 768px) and (min-width:650px) {
+
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:auto;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 20px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	#travel
+	{
+		width: 40%;
+		height: 50%;
+		margin: 2% 1%;
+		margin-left: 8%;
+	}
+
+	#food
+	{
+		width: 40%;
+		height: 50%;
+		margin: 2% 1%;
+	}
+
+	#movie
+	{
+		width:  83%;
+		height: 43%;
+		margin: 2% 8%;
+	}
+
+	.movie_image
+	{
+		height: 56%;
+	}
+
+	.word3
+	{
+		top: 61%;
+	}
+
+	.word1,.word2,.word3
+	{
+		font-size: 19px;
+		width: 116px;
+	}
+
+	.q_1,.q_2,.q_3,.q_4
+	{
+		font-size: 19px;
+	}
+
+	.q_3
+	{
+		top:79%;
+	}
+
+	.q_4
+	{
+		top: 87%;
+	}
+}
+
+/* from 650px to 560px */
+@media screen and (max-width: 650px) and (min-width:560px) {
+
+	#parent1
+	{
+		margin-top: 0;
+		width:auto;
+		height:180px;
+		float:none;
+		background-repeat: repeat-x;
+	}
+
+	.id
+	{
+		width:100px;
+		height:100px;
+		background-size: 100px 140px;
+		margin:0 auto;
+	}
+
+	ul
+	{
+		width:auto;
+		height: 100px;
+		margin: 10px auto;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 9px;
+	}
+
+	#parent2
+	{
+		position: absolute;
+		width:100%;
+		top:180px;
+		bottom:0;
+		float:none;
+		margin-left: 0;
+		background-repeat: repeat;
+		height: auto;
+	}
+
+	#travel
+	{
+		width: 40%;
+		height: 50%;
+		margin: 2% 1%;
+		margin-left: 8%;
+	}
+
+	.travel_image,.food_image
+	{
+		left: 15%;
+		width: 70%;
+		height: 30%;
+	}
+
+	.word1,.word2
+	{
+		top:31%;
+		font-size: 16px;
+	}
+
+	.q_1,.q_2,.q_3,.q_4
+	{
+		font-size: 17px;
+	}
+
+	.q_1
+	{
+		top: 57%;
+	}
+
+	.q_2
+	{
+		top: 74%;
+	}
+
+	.q_3
+	{
+		top: 75%;
+	}
+
+	.q_4
+	{
+		top: 87%;
+	}
+
+	.word3
+	{
+		font-size: 17px;
+		top: 53%;
+	}
+
+	#food
+	{
+		width: 40%;
+		height: 50%;
+		margin: 2% 1%;
+	}
+
+	#movie
+	{
+		width:  83%;
+		height: 43%;
+		margin: 2% 8%;
+	}
+
+	.movie_image
+	{
+		height: 52%;
+		width: 80%;
+		left: 10%;
+	}
+
+	.word1,.word2,.word3
+	{
+		width: 116px;
+	}
+}
+
+/* from 560px to 315px */
+@media screen and (max-width: 560px) and (min-width:320px) {
+
+	*
+	{
+		width: auto;
+	}
+
+	#parent1
+	{
+		width:320px;
+		float: none;
+		height: 127px;
+		position: absolute;
+	}
+
+	.id
+	{
+		width:70px;
+		height: 70px;
+		background-size:75px 100px;
+		margin: 4px auto;
+	}
+
+	.id:hover
+	{
+		border: 3px solid #7DDE70;
+	}
+
+	ul
+	{
+		width:320px;
+		height:45px;
+	}
+
+	li
+	{
+		display: inline;
+		float: left;
+		padding-left: 18px;
+		width: 80px;
+		height: 41px;
+	}
+
+	a
+	{
+		width: 80px;
+		height:30px;
+		line-height:30px;
+	}
+
+	#parent2
+	{
+		top:132px;
+		left: -320px;
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	#travel
+	{
+   		width: 90%;
+   	 	height: 20%;
+    	margin: 0 13px;
+    	top: 29%;
+	}
+
+	.word1, .word2, .word3
+	{
+  	top: 4%;
+    width: 200px;
+}
+
+	.q_1, .q_3
+	{
+    	display: none;
+	}
+
+	.q_2, .q_4
+	{
+    	display: none;
+	}
+
+	.travel_image
+	{
+    	height: 31%;
+    	display: none;
+	}
+
+	#food
+	{
+    	width: 90%;
+    	height: 20%;
+    	margin: 0 13px;
+    	top: 32%;
+	}
+
+	.food_image
+	{
+    	display: none;
+	}
+
+	#movie
+	{
+    	width: 90%;
+    	height: 20%;
+    	margin: 0 13px;
+    	top: 35%;
+	}
+
+	.movie_image
+	{
+    	display: none;
+	}
+
+}
