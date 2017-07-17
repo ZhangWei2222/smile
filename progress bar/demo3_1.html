@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>进度条3</title>
+    <style type="text/css">
+        @keyframes lds-blocks {
+        0% {
+            background: #ffd391;
+        }
+        12.5% {
+            background: #ffd391;
+        }
+        12.625% {
+            background: #ff727d;
+        }
+        100% {
+            background: #ff727d;
+        }
+        }
+        @-webkit-keyframes lds-blocks {
+        0% {
+            background: #ffd391;
+        }
+        12.5% {
+            background: #ffd391;
+        }
+        12.625% {
+            background: #ff727d;
+        }
+        100% {
+            background: #ff727d;
+        }
+        }
+        .lds-blocks {
+        position: relative;
+        }
+        .lds-blocks div {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #ff727d;
+        -webkit-animation: lds-blocks 1s linear infinite;
+        animation: lds-blocks 1s linear infinite;
+        }
+        .lds-blocks {
+        width: 200px !important;
+        height: 200px !important;
+        -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+        transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+        }
+    </style>
+    <script src="./js/jq.min.js"></script>
+    <script>
+        document.onreadystatechange = function(){
+            if(document.readyState == "complete"){
+                $(".lds-blocks,.lds-cssng-scope").fadeOut();
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="lds-cssng-scope" style="width: 100%; height: 100%;position:fixed;background:#fff;top:0;left:0;z-index:100;">
+<div class="lds-blocks" style="100%;height:100%"><div style="left:38px;top:38px;animation-delay:0s"></div><div style="left:80px;top:38px;animation-delay:0.125s"></div><div style="left:122px;top:38px;animation-delay:0.25s"></div><div style="left:38px;top:80px;animation-delay:0.875s"></div><div style="left:122px;top:80px;animation-delay:0.375s"></div><div style="left:38px;top:122px;animation-delay:0.75s"></div><div style="left:80px;top:122px;animation-delay:0.625s"></div><div style="left:122px;top:122px;animation-delay:0.5s"></div></div>
+</div>
+
+    <img src="http://img.hb.aicdn.com/51ca0102f498c14fc63163e913b259b3d3dc1ae99831-sXCxTV_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/bc9737c95f672e0b7796570c6a250d4c2888e5cdf152-K0GEfi_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/cbf138a896d366f800aae3ca1c80e26635d4aedfb0ea0-VQkgfM_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/fcf7eb23aec011645012c5d906ed5e0d6d40356712226-5pmiBy_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/5dc5d016fb09d2c02813fce32b361a7ec06c5d802e6f3-t1slY0_fw658" alt=""/>
+</body>
+</html>

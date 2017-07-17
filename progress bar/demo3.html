@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>进度条3</title>
+    <style>
+        .loading {
+            width:100%;
+            height:100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index:100;
+            background: #fff;
+        }
+        .loading .pic {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .loading .pic i {
+            display: block;
+            float: left;
+            width: 6px;
+            height: 50px;
+            background: #399;
+            margin:0 2px;
+            -webkit-transform:scaleY(0.4);
+            -ms-transform:scaleY(0.4);
+            transform:scaleY(0.4);
+            -webkit-animation:load 1.2s infinite;
+            animation:load 1.2s infinite;
+        }
+        .loading .pic i:nth-child(2) {
+            -webkit-animation-delay:0.1s;
+            animation-delay:0.1s;
+        }
+        .loading .pic i:nth-child(3) {
+            -webkit-animation-delay:0.2s;
+            animation-delay:0.2s;
+        }
+        .loading .pic i:nth-child(4) {
+            -webkit-animation-delay:0.3s;
+            animation-delay:0.3s;
+        }
+        .loading .pic i:nth-child(5) {
+            -webkit-animation-delay:0.4s;
+            animation-delay:0.4s;
+        }
+        @-webkit-keyframes load {
+            0%, 40%, 100% {
+                -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4)
+            }
+            20% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1)
+            }
+        }
+        @keyframes load {
+            0%, 40%, 100% {
+                -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4)
+            }
+            20% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1)
+            }
+        }
+
+    </style>
+    <script src="./js/jq.min.js"></script>
+    <script>
+        document.onreadystatechange = function(){
+            if(document.readyState == "complete"){
+                $(".loading").fadeOut();
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class = "loading">
+        <div class = "pic">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <img src="http://img.hb.aicdn.com/51ca0102f498c14fc63163e913b259b3d3dc1ae99831-sXCxTV_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/bc9737c95f672e0b7796570c6a250d4c2888e5cdf152-K0GEfi_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/cbf138a896d366f800aae3ca1c80e26635d4aedfb0ea0-VQkgfM_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/fcf7eb23aec011645012c5d906ed5e0d6d40356712226-5pmiBy_fw658" alt=""/>
+    <img src="http://img.hb.aicdn.com/5dc5d016fb09d2c02813fce32b361a7ec06c5d802e6f3-t1slY0_fw658" alt=""/>
+</body>
+</html>
