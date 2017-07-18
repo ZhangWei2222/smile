@@ -11,7 +11,7 @@ body{
 
 /*弹出框  */
 /*小的弹出框  */
-.pop,.bigPop{
+#pophouse,#bigPop{
     width: 950px;
     height: 600px;
     border: 1px solid black;
@@ -34,7 +34,7 @@ body{
     background-color: rgba(136, 73, 156, 0.8);
 }
 
-.closehouse,.closebus,.closemusic,.closeBhouse{
+#closeBox,#closeBBox{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -60,6 +60,8 @@ body{
 /*大的弹出框  */
 #popBBox{
     margin-left: -227.5px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .bigboxPop{
@@ -214,6 +216,11 @@ section{
     position: absolute;
     top: 50%;
     margin-top: -10px;
+    color:#fff; 
+    font-size: 18px;
+    font-weight: 500;
+    line-height:20px;
+    letter-spacing: 0.5px;
 }
 
 ::-webkit-input-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-height:25px;letter-spacing: 1px }
@@ -273,6 +280,11 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     cursor: pointer;
     text-align: left;
     text-indent: 10px;
+}
+
+.selete li:hover{
+    cursor: pointer;
+    background-color: #e94e38;
 }
 
 .cityChoice{
@@ -341,10 +353,22 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 
 .filter img{
     cursor: pointer;
-    position: absolute;
+     position: absolute;
     top: 50%;
     margin-top: -4.5px;
-    right:17px; 
+    right:17px;  
+}
+
+.map{
+    cursor: pointer;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 100px;
+}
+
+.map:hover{
+    background-color: #1baf5d;
+    background-image: url(../img/map1.png);
 }
 
 .cityFilter,.mapFilter{
@@ -357,6 +381,11 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     position: absolute;
     top: 50%;
     margin-top: -10px;
+    color:#e94e38;
+    font-size: 12px;
+    font-weight: 500;
+    line-height:20px;
+    letter-spacing: 0.5px;
 }
 
 .mapFilter{
@@ -366,6 +395,10 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     font-weight: 500;
     line-height:20px;
     letter-spacing: 0.5px
+}
+
+.mapFilter:hover{
+    color:#fff; 
 }
 
 .cityFilter::-webkit-input-placeholder { color:#e94e38; font-size: 12px;font-weight: 500;line-height:20px;letter-spacing: 0.5px }
@@ -394,6 +427,11 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     height: 30px;
     line-height: 30px;
     text-indent: 5px;
+}
+
+.filterChoice li:hover{
+    color: #e94e38;
+    cursor: pointer;
 }
 
 .filterIcon{
@@ -446,7 +484,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     height: 267px;
 }
 
-.bigbox,.bigboxPop{
+.bigbox,#bigboxPop{
     width: 455px;
     height: 272px;
     margin-left: 36px;
@@ -462,12 +500,12 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     cursor:url(../img/cursor.ico),pointer;
 }
 
-.img2,.img6,.img8,.img11,.img13{
+#musiccover,.img2,.img6,.img8,.img11,.img13{
     border-bottom: 3px solid #e5a164;
     cursor:url(../img/cursor.ico),pointer;
 }
 
-.img3,.img9{
+#buscover,.img2,.img9{
     border-bottom: 3px solid #88499c;
     cursor:url(../img/cursor.ico),pointer;
 }
@@ -476,7 +514,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     cursor:auto;
 }
 
- .houseHover,.musicHover,.busHover, .houseHoverPop,.musicHoverPop,.busHoverPop{
+ .houseHover,.musicHover,.busHover, #houseHoverPop,#musicHoverPop,#busHoverPop{
     background-color: rgba(27, 175, 93, 0.7);
     width: 210px;
     height: 143px;
@@ -484,6 +522,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     top: 0px;
     border-radius: 5px;
     display: none;
+    cursor:url(../img/cursor.ico),pointer;
 } 
 
 .musicHover{
@@ -494,7 +533,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     background-color: rgba(136, 73, 156, 0.7);
 }
 
-.showMore,.showMorePop{
+.showMore,#showMorePop{
     width: 137px;
     height: 31px;
     border: 2px solid #fff;
@@ -535,19 +574,19 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 .showMore input:-ms-input-placeholder { color:#fff; font-size: 12px;font-weight: 500;line-height:20px; letter-spacing: 0.5px} /* ie */
 .showMore input input:-moz-placeholder { color:#fff; font-size: 12px;font-weight: 500;line-height:20px; letter-spacing: 0.5px}
 
-.starShow,.starShowPop{
+.starShow,#starShowPop{
     position: absolute;
     top: 73px;
     left: 50%;
     margin-left: -61.5px;
 }
 
-.starShow img,.starShowPop img{
+.starShow img,#starShowPop img{
     margin-right: 25px;
     cursor: pointer;
 }
 
-.icon,.iconPop{
+.icon,#iconPop{
     position: absolute;
     top: 109px;
     left: 74px;
@@ -555,7 +594,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     z-index: 999;
 }
 
-.iconBig,.iconBigPop{
+.iconBig,#iconBigPop{
     position: absolute;
     top: 92px;
     left: 20px;
@@ -563,7 +602,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 }
 
 /*小盒子  */
-.smallbox .intro,.introPop{
+.smallbox .introhouse,.intromusic,.introbus,#introPop{
     font-size: 13px;
     color: #566375;
     font-weight: 600;
@@ -574,7 +613,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     text-align: center;
 }
 
-.money,.moneyPop{
+.money,#moneyPop{
     position: absolute;
     width: 65px;
     height: 25px;
@@ -585,13 +624,13 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     left: 140px;
 }
 
-.money span,.moneyPop span{
+.money span,#moneyPop span{
     color: #fff;
     font-size: 15px;
     line-height: 25px;
 }
 
-.name,.name housePop{
+.name,#namePop{
     font-size: 12px;
     display: block;
     top: 21px;
@@ -600,19 +639,19 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     text-align: center;
 }
 
-.house,.housePop{
+.house,#housePop,#namePop{
     color: #1baf5d;
 }
 
-.music,.namePop{
+.music,#musicPop{
     color: #f19e1f;
 }
 
-.bus,.busPop{
+.bus,#busPop{
     color: #88499c;
 }
 
-.star,.starPop{
+.star,#starPop{
     width: 100%;
     position: absolute;
     bottom: 8px;
@@ -625,7 +664,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     display: block;
 }
 
-.score,.scorPop{
+.score,#scorPop{
     color: #96a6a7;
     font-size: 10px;
     position: absolute;
@@ -633,7 +672,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 }
 
 /*大盒子  */
-.introBox,.introBoxPop{
+.introBox,#introBoxPop{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -642,22 +681,22 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     top: 95px;
 }
 
-.introBox img,..introBoxPop img{
+.introBox img,#introBoxPop img{
     margin-left: 10px;
 }
 
-.introBig,.introBigPop{
+.introBig,#introBigPop{
     display: block;
     color: #fff;
 }
 
-.scoreBig,.scoreBigPop{
+.scoreBig,#scoreBigPop{
     color: #fff;
     font-size: 10px;
     display: block;
 }
 
-.person,.personPop{
+.person,#personPop{
     height: 149px;
     width: 95px;
     display: flex;
@@ -666,14 +705,14 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 
 }
 
-.person1,.person2,.person1Pop,.person2Pop{
+.person1,.person2,#person1Pop,#person2Pop{
     width: 61px;
     height: 61px;
     margin-bottom: 40px;
     margin-left: 19px;
 }
 
-.shape,.shapePop{
+.shape,#shapePop{
     height: 15px;
     width: 2px;
     margin-top: 30px;
@@ -681,7 +720,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 
 }
 
-.personEva,.personEvaPop{
+.personEva,#personEvaPop{
     width: 289px;
     height: 149px;
     display: flex;
@@ -690,19 +729,19 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
 
 }
 
-.personEva img,.personEvaPop img{
+.personEva img,#personEvaPop img{
     width: 86px;
     height: 16px;
     margin:15 0 15 0;
 }
 
-.personName,.personNamePop{
+.personName,#personNamePop{
     color: #566375;
     font-size: 16px;
     font-weight: 600;
 }
 
-.evaluate,.personEva b,.evaluatePop,.personEvaPop b{
+.evaluate,.personEva b,#evaluatePop,#personEvaPop b{
     color: #838d9a;
     font-size: 15px;
     font-weight: 300;
@@ -710,7 +749,7 @@ input:-moz-placeholder { color:#fff; font-size: 18px;font-weight: 200;line-heigh
     margin-top: 4px;
 }
 
-.personEva b,.personEvaPop b{
+.personEva b,#personEvaPop b{
     font-weight: 600;
     text-decoration: underline;
     display: block;
