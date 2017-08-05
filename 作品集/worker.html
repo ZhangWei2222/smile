@@ -1,0 +1,72 @@
+ <!-- /*
+ * @Author: Zhang.Wei 
+ * @Date: 2017-07-25 09:32:27 
+ * @Last Modified by:   Zhang.Wei 
+ * @Last Modified time: 2017-07-25 09:32:27 
+ */  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>作品页</title>    
+<script src="./js/jq.min.js"></script>
+<script src="./js/worker/hammer.min.js"></script>
+<script src="./js/flexible.debug.js"></script>
+<link href="./css/index.css" rel="stylesheet">
+<link href="./css/worker.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <img class="LOGO" src="./img/LOGO.png" alt="vtmer">
+    <a href="./homepage.html" class="BTN-HOME"><img src="./img/BTN-HOME.png" alt="hmoe"/></a>
+
+    <div id="bgContent">
+            <div id="haxagons"></div>
+    </div>
+
+    <div class="box">
+        <ul class="workersBox">
+        </ul>
+    </div>
+    <div class="touchBut">
+        <a href='touch.html'>联系我们</a>
+    </div>
+
+    <script type="text/javascript" src="./js/handlebars-v2.0.0.js"></script> 
+    <script src="./js/worker/worker_html.js"></script>
+    <script id="worker-template" type="text/x-handlebars-template">
+
+        {{#each this}}
+                <li>
+                    <img class='banner' src="{{pic}}" alt="banner1"/>
+                    <ul class="itroBox">
+                        <li class="title">{{title}}</li>
+                        <li class="line"></li>
+                        <li class="introduce">
+                            {{intro}}
+                        </li>
+                        <li class="important">
+                            <span>项目难点：</span>
+                            <p class="content" id="content">{{content}}</p>
+                        </li>
+                        <li class="look">
+                            <a href="./touch.html">查看联系</a>
+                        </li>
+                    </ul>
+                </li>
+        {{/each}}
+    </script> 
+
+    <script src="./js/worker/event.js"></script>
+    <script src="./js/worker/zepto.min.js"></script>
+    <script src="./js/worker/fx.js"></script>
+    <script src="./js/worker/touch-0.2.14.min.js"></script> 
+    <script src="./js/worker/zepto.textSlider.js"></script>
+    <script src="./js/worker/worker.js"></script>    
+    <script src="./js/jquery.transit.js"></script> 
+    <script src="./js/background.js"></script>       
+
+</body>
+</html>

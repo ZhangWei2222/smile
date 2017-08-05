@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/**首页主体**/
+.homeContent{
+  position: absolute;
+  z-index: 9;
+  width:100%;
+  height: 100%;
+ }
+.LOGO{
+  margin-left: 0.5867rem;
+  margin-top: 0.4667rem;
+  width: 2.48rem;
+  height: 0.6rem;
+
+}
+.content-login{
+  width: 0.55rem;
+  height: 0.55rem;
+  background-position: center;
+  float:right;
+   margin-right:  0.466667rem;
+  margin-top: 0.4667rem;
+}
+.content-login img{
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.content-center{
+	width: 2.9333rem;
+  margin:0 auto; 
+}
+.content-center img{
+  width:2.213333rem;
+  height: 7.226667rem;
+  position: absolute;
+  left:53%;
+  top:50%;
+  margin-top:-3.613333rem;
+  margin-left:-1.106667rem;
+}
+.content-BTNlogin{
+  width: 2.9333rem;
+  height: 0.6667rem;
+  border: 0.0267rem solid rgb(56,140,255);
+  text-align: center;
+  border-radius: 1.0667rem;
+  position: absolute;
+  top:13.3333rem;
+
+}
+.content-BTNlogin a {
+  font-size: 0.32rem;
+  line-height: 0.6667rem;
+  text-decoration: none;
+  color:rgb(155,191,255);
+  font-weight: 300;
+}
+/**弹出层**/
+
+/*遮罩层*/
+#mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+ 
+}
+/*登录框*/
+#alertbox{
+  width:8.066667rem;
+  height: 10.013333rem;
+  position:fixed;
+  z-index: 11;
+  left:50%;
+  top:45%;
+  margin-left: -4.02rem;
+  margin-top:-5.0rem;
+  background: url(../img/home/窗口.png) no-repeat;
+  background-size: 100% 100%;
+  
+}
+/*弹出动画*/
+@-webkit-keyframes moveIn{
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn{
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.moveIn {
+  -webkit-animation-name:moveIn;
+  animation-name: moveIn;
+  animation-timing-function:ease;
+  -webkit-animation-timing-function:ease;
+  animation-duration:0.3s;
+  -webkit-animation-duration:0.3s;     
+           
+}
+
+/*背景*/
+/* @-webkit-keyframes moveOut{
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+@keyframes moveOut{
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.moveOut {
+  -webkit-animation-name:moveOut;
+  animation-name: moveOut;
+  animation-timing-function:ease;
+  -webkit-animation-timing-function:ease;
+  animation-duration:0.3s;
+  -webkit-animation-duration:0.3s;     
+           
+} */
+#alertClose{
+  width:0.44rem;
+  height: 0.453333rem;
+  position: absolute;
+  right: 0.333333rem;
+  top:0.333333rem;
+}
+#Form{
+  width:5.146667rem;
+  height:auto;
+  margin:0 auto;
+  margin-top:4.933333rem;
+}
+#Form ul{
+  width:100%;
+  height:1.24rem;
+}
+#Form ul li{
+  list-style: none;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+#Msg{
+  color: rgb(254,158,162);
+  display: none;
+}
+#useremail,#psw{
+  width:100%;
+  height: 0.8rem;
+  font-size: 0.373333rem;
+  line-height:0.8rem;
+  color:rgb(139,139,139);
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+#submitBTN{
+  width:3.946667rem;
+  height: 0.96rem;
+  position: absolute;
+  left:50%;
+  margin-left: -1.973333rem;
+  margin-top:1.6rem;
+  background: url(../img/home/BTN登录.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.666667rem;
+  border: 0;
+  outline: none;
+  
+}
+
+input::-webkit-input-placeholder{
+color:rgb(211,211,211);
+}
+input:-moz-placeholder{
+color:rgb(211,211,211);
+}
+input::-moz-placeholder{
+color:rgb(211,211,211);
+}
+input:-ms-input-placeholder{
+color:rgb(211,211,211);
+} 
+/*背景*/
+#bgContent{
+ width: 100%;
+ height: 100%; 
+ position: relative; 
+}
+.Hexagon{
+  position: absolute;
+}
+
+
+
+
+
+

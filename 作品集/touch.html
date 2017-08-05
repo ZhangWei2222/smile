@@ -1,0 +1,90 @@
+ <!-- /*
+ * @Author: Zhang.Wei 
+ * @Date: 2017-07-25 14:59:09 
+ * @Last Modified by: Zhang.Wei
+ * @Last Modified time: 2017-07-25 23:54:08
+ */  -->
+
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<title>联系页面</title>
+<script src="./js/jq.min.js"></script> 
+<script src="./js/flexible.debug.js"></script>
+<script src="./js/touch/clipboard.min.js"></script> 
+<link href="./css/index.css" rel="stylesheet">
+<link href="./css/touch.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--LOGO和HOME  -->
+    <img class="LOGO" src="./img/LOGO.png" alt="vtmer">
+    <a href="./homepage.html" class="BTN-HOME"><img src="./img/BTN-HOME.png" alt="hmoe"/></a>
+
+    <div id="bgContent">
+            <div id="haxagons"></div>
+    </div>
+
+    <div id="personList">
+ 
+    </div>
+
+    <div class="returnBut">
+        <a href="./homepage.html">回到首页</a>
+    </div>
+
+    <script type="text/javascript" src="./js/handlebars-v2.0.0.js"></script>
+    <script src="./js/touch/touch.js"></script>
+    <script id="table-template" type="text/x-handlebars-template">
+
+        {{#each this}}
+            <div class="person Mr1" id="person">
+                    <!--头像和名字  -->
+                    <div class="personItr">
+                        <img src="{{pic}}" alt="Lizhihang">
+                        <div class="name">
+                            <span class='chinesename'>{{name}}</span>
+                            <span class='englishname'>{{EngName}}</span>
+                        </div>
+                    </div>
+
+                    <!--联系方式  -->
+                    <div class="touchwayBox">
+                        <div class="touch phone">
+                            <img src="./img/touch/phoneIcon.png" alt="phone">
+                            <span class="phone number">{{tel}}</span>
+                            <div class="call">
+                                <a href='tel:{{tel}}'>拨号</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="touchwayBox">
+                        <div class="touch wechat">
+                            <img src="./img/touch/wechatIcon.png" alt="wechat">
+                            <span class="wechat number" id="wechatHang">{{wechat}}</span>
+                            <div class="copy" data-clipboard-target="#wechatHang" id="wechatCopyHang">
+                                复制
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="touchwayBox">
+                        <div class="touch email">
+                            <img src="./img/touch/emailIcon.png" alt="email">
+                            <span class="email number" id="emailHang">{{email}}</span>
+                            <div class="copy" data-clipboard-target="#emailHang" id="emailCopyHang">
+                                复制
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+            {{/each}}
+    </script>
+
+    <script src="./js/jquery.transit.js"></script> 
+    <script src="./js/background.js"></script>
+</body>
+</html>
